@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart disease</title>
+</head>
+<body>
+    <form action="/get_label">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="1">
+        <label for="sex">sex:</label>
+        <select name="sex" id="sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+        <label for="cp">chest pain type:</label>
+        <select name="cp" id="cp">
+            <option value="0">Typical angina</option>
+            <option value="1">Atypical angina</option>
+            <option value="2">Non-anginal pain</option>
+            <option value="3">Asymptomatic</option>
+        </select>
+        <label for="trestbps">resting blood pressure(mm Hg):</label>
+        <input type="number" name="trestbps" id="trestbps" min="1">
+        <label for="chol">serum cholestoral in mg/dl:</label>
+        <input type="number" name="chol" id="chol" min="1">
+        <label for="fbs">fasting blood sugar:</label>
+        <input type="number" name="fbs" id="fbs" min="1">
+        <label for="restecg">resting electrocardiographic:</label>
+        <select name="restecg" id="restecg">
+            <option value="0">Nothing to note</option>
+            <option value="1">ST-T Wave abnormality</option>
+            <option value="2">Possible or definite left ventricular hypertrophy</option> 
+        </select>
+        <label for="thalach">maximum heart rate achieved:</label>
+        <input type="number" name="thalach" id="thalach" min="1">
+        
+        <label for="exang">exercise induced angina:</label>
+        <select name="exang" id="exang">
+            <option value="0">No</option>
+            <option value="1">Yes</option>  
+        </select>
+        <label for="oldpeak">ST depression induced by exercise relative to rest:</label>
+        <input type="number" name="oldpeak" id="oldpeak" min="1">
+        <label for="slope">ST depression induced by exercise relative to rest:</label>
+        <select name="slope" id="slope">
+            <option value="0">Upsloping</option>
+            <option value="1">Flatsloping</option>  
+            <option value="2">Downslopins</option>  
+        </select>
+        <label for="ca">number of major vessels:</label>
+        <select name="ca" id="ca">
+            <option value="0">0</option>
+            <option value="1">1</option>  
+            <option value="2">2</option>  
+            <option value="3">3</option>  
+        </select>
+        <label for="thal">thalium stress:</label>
+        <select name="thal" id="thal">
+            <option value="1">normal(thal=1)</option>
+            <option value="3">normal(thal=3)</option>
+            <option value="6">fixed defect</option>  
+            <option value="7">reversable defect</option>   
+        </select>
+        <input type="submit" value="PREDICT">
+        
+
+        
+        
+    </form>
+</body>
+</html>
